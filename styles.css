@@ -1,0 +1,117 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+html, body {
+ height: 100%;
+}
+h1, h2, h3, h4, h5, h6, p {
+ margin-bottom: 16px
+}
+
+.wrapper{
+    background: #252525;
+    background: #252525;
+}
+
+.innerWrapper{
+    height: 100%;
+}
+
+nav{
+    position: relative;
+    height: 80px;
+    display:flex;
+    background: #393939;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#addpcBtn{
+    height: 50%;
+    width: auto;
+    margin-right: 50px;
+    padding:1rem;
+    font-weight: bolder;
+}
+
+#computerListWrapper{
+    height: 500px;
+    width:  320px;
+    border-radius: 10px 0px 10px 10px;
+    position: absolute;
+    top:100%;
+    display: none;
+    overflow-y: scroll;
+    background:white;
+}
+
+#computerListWrapper h6{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+}
+
+#computerListWrapper li:nth-child(odd) {
+    position: relative;
+    background: #efca93;
+    padding: 5px;
+}
+
+#computerListWrapper li:nth-child(even) {
+    position: relative;
+    background: #d88f00;
+    padding: 5px;
+}
+
+#computerListWrapper li:hover{
+    background-color: rgba(255, 255, 255, 0.349);
+}
+
+.mapArea{
+    position: relative;
+    margin: 0 auto;
+    height: auto;
+    width: 65%;
+}
+
+.mapArea img{
+    padding:20px;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.draggable-dots{
+    height:20px;
+    width: 20px;
+    position: absolute;
+    top:3%;
+    left:25%;
+    cursor: pointer;
+    border-radius:50%;   
+}
+
+.popUp{
+    display: none;
+    position:absolute;
+    height: 90 auto;
+    min-width: 200px auto;
+    padding:10px;
+    backdrop-filter: blur(14px);
+    background: linear-gradient(to right, rgba(26, 30, 255, 0.7), rgba(11, 68, 93, 0.509), 
+     rgba(45, 34, 162, 0.5));
+    border: solid black 1.3px;
+    color: white;
+    z-index: 999999;
+    border-radius: 20px;
+}
+
+.popUp .status-indicator{
+    position: absolute;
+    left: 30px;
+    bottom: 51%;
+}
+
+
